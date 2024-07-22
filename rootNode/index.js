@@ -7,8 +7,8 @@ const PubSub = require("./app/pubsub");
 const isDevelopment = process.env.ENV === "development" // || false; // to be replaced with a dotEnv() setup
 // console.log({isDevelopment})
 
-// const REDIS_URL = isDevelopment ? "localhost" : "redis://default:d2JDknzPFVd3MC41iGnitB5hIkW9lHSv@redis-15494.c293.eu-central-1-1.ec2.redns.redis-cloud.com:15494";
-const REDIS_URL = "localhost"
+const REDIS_URL = isDevelopment ? "localhost" : "redis://default:d2JDknzPFVd3MC41iGnitB5hIkW9lHSv@redis-15494.c293.eu-central-1-1.ec2.redns.redis-cloud.com:15494";
+// const REDIS_URL = "localhost"
 const DEFAULT_PORT = 3000;
 
 const app = express();
