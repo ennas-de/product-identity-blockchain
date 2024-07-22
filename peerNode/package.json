@@ -1,0 +1,30 @@
+{
+  "name": "MedScan API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "MedScan"
+  ],
+  "author": "MedScan Engineering Team",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "elliptic": "^6.5.5",
+    "express": "^4.19.2",
+    "hex-to-binary": "^1.0.1",
+    "redis": "^4.6.15",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
