@@ -1,17 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 const IPR = () => {
-  const hash = JSON.parse(localStorage.getItem("hash"))
-  const ipr = JSON.parse(localStorage.getItem("ipr"))
+  const { state } = useLocation();
+  const { ipr } = state;
+  const hash = window.location.pathname.split("/").pop();
 
-  console.log({hash, ipr})
+  console.log({hash, ipr});
 
   const ProdIpr = ({productIpr, index}) => (
      <p style={{marginLeft: "10px"}}>Product {index+1} IPR: {productIpr}</p>
-  )
+  );
 
   return (
-    <div style={{overflow: scroll}}>
+    <div style={{overflow: "scroll"}}>
       <h3 style={{fontWeight: "bold"}}>Product Code: {hash}</h3>
       <br />
       <div>
@@ -32,7 +34,7 @@ const IPR = () => {
         }
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default IPR
+export default IPR;
