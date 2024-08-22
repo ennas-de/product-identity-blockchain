@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router";
 import { BrowserRouter as Router } from "react-router-dom";
 import Layout from "./layout";
 import SideBar from "./widgets/Sidebar";
+import Footer from "./widgets/Footer";
 import "./App.css";
 
 import Home from "./pages/dashboard/Home";
@@ -83,6 +84,7 @@ const DashboardLayout = ({ isOpen, toggle }) => (
         <Route path="settings" element={<Settings />} />
       </Routes>
     </Layout>
+    <Footer />
   </>
 );
 
