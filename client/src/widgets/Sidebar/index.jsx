@@ -50,7 +50,7 @@ const SideBar = ({ isOpen, toggle }) => {
         >
           <FontAwesomeIcon icon={faTimes} pull="right" size="xs" />
         </Button>
-        <h3>IPR</h3>
+        <h3>Internationalized Products Record</h3>
       </div>
 
       <Nav className="flex-column pt-2">

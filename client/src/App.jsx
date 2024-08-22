@@ -84,7 +84,7 @@ const DashboardLayout = ({ isOpen, toggle }) => (
         <Route path="settings" element={<Settings />} />
       </Routes>
     </Layout>
-    <Footer />
+    {/* <Footer /> */}
   </>
 );
 
